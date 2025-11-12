@@ -1,0 +1,191 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0d6efd !important;
+}
+
+/* Book Card Styles */
+.book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.book-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-card .card-title {
+  font-weight: 600;
+  color: #212529;
+  min-height: 48px;
+}
+
+.book-card .card-text {
+  color: #6c757d;
+}
+
+/* Cart Styles */
+.cart-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  max-width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer p {
+  color: #adb5bd;
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Order Card Styles */
+.order-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.order-card .badge {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Auth Forms */
+.auth-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 2rem;
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Badge Colors */
+.badge.bg-pending {
+  background-color: #ffc107 !important;
+}
+
+.badge.bg-processing {
+  background-color: #0dcaf0 !important;
+}
+
+.badge.bg-shipped {
+  background-color: #0d6efd !important;
+}
+
+.badge.bg-delivered {
+  background-color: #198754 !important;
+}
+
+.badge.bg-cancelled {
+  background-color: #dc3545 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-card img {
+    height: 250px;
+  }
+  
+  .cart-item img {
+    max-width: 80px;
+    height: 110px;
+  }
+}
