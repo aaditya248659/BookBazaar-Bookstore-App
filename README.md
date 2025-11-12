@@ -345,5 +345,3 @@ For support, email support@bookbazaar.com or create an issue in the GitHub repos
 ---
 
 Made with ❤️ by BookBazaar Team
-##   B o o k B a z a a r - B o o k s t o r e - A p p  
- 
