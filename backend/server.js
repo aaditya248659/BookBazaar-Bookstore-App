@@ -9,28 +9,19 @@ dotenv.config();
 // Connect to database
 connectDB();
 
-const app = express();
-
 const allowedOrigins = [
   "http://localhost:5173",
   "https://book-bazaar-bookstore-app-xdwf.vercel.app",
-  "https://book-bazaar-bookstore-app-xdwf-e2lk5t0w4.vercel.app",
+  "https://book-bazaar-bookstore-app-xdwf-e2lk5t0w4.vercel.app"
 ];
-
-// Allow any Vercel preview deployment:
-const vercelPattern = /^https:\/\/book-bazaar-bookstore-app-xdwf-[a-zA-Z0-9]+\.vercel\.app$/;
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (
-        !origin ||
-        allowedOrigins.includes(origin) ||
-        vercelPattern.test(origin)
-      ) {
+      if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        console.log("❌ CORS blocked:", origin);
+        console.log("CORS blocked:", origin);
         callback(new Error("Not allowed by CORS"));
       }
     },
