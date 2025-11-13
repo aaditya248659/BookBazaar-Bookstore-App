@@ -10,7 +10,7 @@ dotenv.config();
 connectDB();
 
 const allowedOrigins = [
-  "http://localhost:5173",
+  "http://localhost:5173",   // local dev
   "https://book-bazaar-bookstore-app-xdwf.vercel.app",
   "https://book-bazaar-bookstore-app-xdwf-e2lk5t0w4.vercel.app"
 ];
@@ -18,16 +18,22 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      // Allow mobile apps or curl or Postman (no origin)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        console.log("CORS blocked:", origin);
+        console.log("❌ CORS blocked:", origin);
         callback(new Error("Not allowed by CORS"));
       }
     },
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   })
 );
+
 // --------------------------------------------------------
 
 // Middleware
