@@ -11,16 +11,27 @@ connectDB();
 
 const app = express();
 
-// Middleware
+// --- FIXED CORS (ONLY THIS PART CHANGED) ---
+const allowedOrigins = [
+  "https://book-bazaar-bookstore-app-xdwf.vercel.app",  // your Vercel frontend
+  "http://localhost:5173"                               // Vite local dev
+];
+
 app.use(cors({
-  origin: [
-    "https://book-bazaar-bookstore-app-xdwf.vercel.app",  // Vercel frontend
-    "http://localhost:5173"                               // Local dev
-  ],
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true); // allow server calls
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error("CORS blocked: " + origin));
+  },
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
+  credentials: true
 }));
+// --------------------------------------------------------
+
+// Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
