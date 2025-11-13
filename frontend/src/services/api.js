@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://bookbazaar-backend.onrender.com/api";
+const API_URL = "https://bookbazaar-bookstore-app.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_URL,

@@ -13,9 +13,13 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "*",
+  origin: [
+    "https://book-bazaar-bookstore-app-xdwf.vercel.app",  // Vercel frontend
+    "http://localhost:5173"                               // Local dev
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
