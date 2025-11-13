@@ -13,9 +13,11 @@ const app = express();
 
 // --- FIXED CORS (ONLY THIS PART CHANGED) ---
 const allowedOrigins = [
-  "https://book-bazaar-bookstore-app-xdwf.vercel.app",  // your Vercel frontend
-  "http://localhost:5173"                               // Vite local dev
+  "http://localhost:5173",
+  /^https:\/\/book-bazaar-bookstore-app-xdwf-.*\.vercel\.app$/,
+  "https://book-bazaar-bookstore-app-xdwf.vercel.app"
 ];
+
 
 app.use(cors({
   origin: function(origin, callback) {
