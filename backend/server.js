@@ -11,26 +11,32 @@ connectDB();
 
 const app = express();
 
-// --- FIXED CORS (ONLY THIS PART CHANGED) ---
 const allowedOrigins = [
   "http://localhost:5173",
-  /^https:\/\/book-bazaar-bookstore-app-xdwf-.*\.vercel\.app$/,
-  "https://book-bazaar-bookstore-app-xdwf.vercel.app"
+  "https://book-bazaar-bookstore-app-xdwf.vercel.app",
+  "https://book-bazaar-bookstore-app-xdwf-e2lk5t0w4.vercel.app",
 ];
 
+// Allow any Vercel preview deployment:
+const vercelPattern = /^https:\/\/book-bazaar-bookstore-app-xdwf-[a-zA-Z0-9]+\.vercel\.app$/;
 
-app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin) return callback(null, true); // allow server calls
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-    return callback(new Error("CORS blocked: " + origin));
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (
+        !origin ||
+        allowedOrigins.includes(origin) ||
+        vercelPattern.test(origin)
+      ) {
+        callback(null, true);
+      } else {
+        console.log("❌ CORS blocked:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
 // --------------------------------------------------------
 
 // Middleware
