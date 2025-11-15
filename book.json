@@ -1,0 +1,222 @@
+[
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "isbn": "9781250301697",
+    "price": 399,
+    "category": "Thriller",
+    "description": "A psychological thriller about a woman's act of violence against her husband—and the therapist obsessed with uncovering her motive.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg",
+    "stock": 85,
+    "rating": 4.7
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "isbn": "9780399590504",
+    "price": 449,
+    "category": "Biography",
+    "description": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world through education.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780399590504-L.jpg",
+    "stock": 70,
+    "rating": 4.8
+  },
+  {
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "isbn": "9780525559474",
+    "price": 499,
+    "category": "Fiction",
+    "description": "Between life and death there is a library, and within it an infinite number of lives to choose from.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg",
+    "stock": 95,
+    "rating": 4.8
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "isbn": "9780441013593",
+    "price": 599,
+    "category": "Science Fiction",
+    "description": "The epic science fiction masterpiece about politics, religion, and ecology on the desert planet Arrakis.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780441013593-L.jpg",
+    "stock": 60,
+    "rating": 4.9
+  },
+  {
+    "title": "A Promised Land",
+    "author": "Barack Obama",
+    "isbn": "9781524763169",
+    "price": 699,
+    "category": "Biography",
+    "description": "Barack Obama tells the story of his improbable odyssey from young man searching for identity to the leader of the free world.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781524763169-L.jpg",
+    "stock": 50,
+    "rating": 4.9
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "9780061120084",
+    "price": 299,
+    "category": "Classic",
+    "description": "A novel of warmth and humor despite dealing with serious issues of race and injustice in the American South.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
+    "stock": 100,
+    "rating": 4.9
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "price": 299,
+    "category": "Classic",
+    "description": "A portrait of the Jazz Age in all of its decadence and excess, exploring themes of wealth and the American Dream.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    "stock": 85,
+    "rating": 4.8
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780547928210",
+    "price": 599,
+    "category": "Fantasy",
+    "description": "The first volume of Tolkien's epic saga that forever changed fantasy literature.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780547928210-L.jpg",
+    "stock": 75,
+    "rating": 4.9
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "9780316769488",
+    "price": 299,
+    "category": "Fiction",
+    "description": "Holden Caulfield narrates his experiences in New York City after being expelled from prep school.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780316769488-L.jpg",
+    "stock": 90,
+    "rating": 4.7
+  },
+  {
+    "title": "The Four Agreements",
+    "author": "Don Miguel Ruiz",
+    "isbn": "9781878424310",
+    "price": 349,
+    "category": "Self-Help",
+    "description": "A practical guide to personal freedom based on ancient Toltec wisdom.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781878424310-L.jpg",
+    "stock": 80,
+    "rating": 4.8
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "isbn": "9780375842207",
+    "price": 399,
+    "category": "Historical Fiction",
+    "description": "A young girl in Nazi Germany finds solace by stealing books and sharing them with others.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg",
+    "stock": 90,
+    "rating": 4.9
+  },
+  {
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "isbn": "9781451648539",
+    "price": 599,
+    "category": "Biography",
+    "description": "Based on more than forty interviews with Steve Jobs and hundreds more with family, friends, and colleagues.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781451648539-L.jpg",
+    "stock": 50,
+    "rating": 4.9
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "isbn": "9780307387899",
+    "price": 349,
+    "category": "Fiction",
+    "description": "A father and son journey through a post-apocalyptic world of ash and desolation.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780307387899-L.jpg",
+    "stock": 60,
+    "rating": 4.8
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "isbn": "9780804139021",
+    "price": 499,
+    "category": "Science Fiction",
+    "description": "An astronaut becomes stranded on Mars and must find a way to survive.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780804139021-L.jpg",
+    "stock": 70,
+    "rating": 4.8
+  },
+  {
+    "title": "Good to Great",
+    "author": "Jim Collins",
+    "isbn": "9780066620992",
+    "price": 549,
+    "category": "Business",
+    "description": "Why some companies make the leap from good to great while others don’t.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780066620992-L.jpg",
+    "stock": 55,
+    "rating": 4.8
+  },
+  {
+    "title": "Man’s Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "isbn": "9780807014271",
+    "price": 349,
+    "category": "Philosophy",
+    "description": "Psychiatrist Viktor Frankl's memoir of surviving Nazi death camps and his reflections on life's purpose.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780807014271-L.jpg",
+    "stock": 75,
+    "rating": 4.9
+  },
+  {
+    "title": "Thinking in Systems",
+    "author": "Donella H. Meadows",
+    "isbn": "9781603580557",
+    "price": 499,
+    "category": "Science",
+    "description": "A concise and crucial introduction to systems thinking and how to solve complex problems.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781603580557-L.jpg",
+    "stock": 45,
+    "rating": 4.8
+  },
+  {
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "isbn": "9781984819192",
+    "price": 499,
+    "category": "Science",
+    "description": "Hawking's final thoughts on the universe, God, and the future of humanity.",
+    "image": "https://covers.openlibrary.org/b/isbn/9781984819192-L.jpg",
+    "stock": 50,
+    "rating": 4.9
+  },
+  {
+    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "author": "Héctor García, Francesc Miralles",
+    "isbn": "9780143130727",
+    "price": 349,
+    "category": "Self-Help",
+    "description": "The ancient Japanese philosophy for finding purpose and joy in everyday life.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780143130727-L.jpg",
+    "stock": 85,
+    "rating": 4.8
+  },
+  {
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "isbn": "9780156012195",
+    "price": 249,
+    "category": "Children",
+    "description": "A poetic tale that explores love, loneliness, and human nature through the eyes of a young prince.",
+    "image": "https://covers.openlibrary.org/b/isbn/9780156012195-L.jpg",
+    "stock": 100,
+    "rating": 4.9
+  }
+]
